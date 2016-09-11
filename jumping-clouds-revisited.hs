@@ -1,7 +1,7 @@
 import Control.Monad
 
 calc_energy :: Int -> Int -> [Int] -> Int
-calc_energy n k clouds = 100 - sum [1 + 2 * (clouds !! i) | i <- range 0 n k]
+calc_energy n k clouds = 100 - sum [1 + 2 * (clouds !! i) | i <- range 0 k n]
 
 range :: Int -> Int -> Int -> [Int]
 range start step end
